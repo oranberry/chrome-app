@@ -1,6 +1,4 @@
 import "./styles.css";
-const colors = ["#1abc9c", "#3498db", "#9b59b6", "#f39c12", "#e74c3c"];
-
 /*
 ✅ The text of the title should change when the mouse is on top of it.
 ✅ The text of the title should change when the mouse is leaves it.
@@ -11,6 +9,7 @@ const colors = ["#1abc9c", "#3498db", "#9b59b6", "#f39c12", "#e74c3c"];
 */
 
 const title = document.querySelector("h2");
+const colors = ["#1abc9c", "#3498db", "#9b59b6", "#f39c12", "#e74c3c"];
 
 const superEventHandler = {
   handleMouseEnter: function() {
@@ -37,7 +36,6 @@ const superEventHandler = {
 
 title.addEventListener("mouseenter", superEventHandler.handleMouseEnter);
 title.addEventListener("mouseleave", superEventHandler.handleMouseLeave);
-// title.addEventListener("select", superEventHandler.handleSelect);
 // window는 현재 스크립트가 작동 중인 창을 나타내는 객체
 window.addEventListener("resize", superEventHandler.handleResize);
 window.addEventListener("contextmenu", superEventHandler.handleContextMenu);
