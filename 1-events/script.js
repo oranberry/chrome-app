@@ -1,4 +1,3 @@
-import "./styles.css";
 /*
 ✅ The text of the title should change when the mouse is on top of it.
 ✅ The text of the title should change when the mouse is leaves it.
@@ -8,34 +7,30 @@ import "./styles.css";
 ✅ ALL function handlers should be INSIDE of "superEventHandler"
 */
 
-const title = document.querySelector("h2");
 const colors = ["#1abc9c", "#3498db", "#9b59b6", "#f39c12", "#e74c3c"];
+const target = document.querySelector("h2");
 
 const superEventHandler = {
   handleMouseEnter: function() {
-    title.innerText = "The mouse is here!";
-    title.style.color = colors[0];
+    target.innerText = "The mouse is here!";
+    target.style.color = colors[0];
   },
   handleMouseLeave: function() {
-    title.innerText = "The mouse is gone!";
-    title.style.color = colors[1];
+    target.innerText = "The mouse is gone!";
+    target.style.color = colors[1];
   },
   handleResize: function() {
-    title.innerText = "You just resized!";
-    title.style.color = colors[2];
+    target.innerText = "You just resized!";
+    target.style.color = colors[2];
   },
-  // handleSelect: function() {
-  //   title.innerText = "You're selecting me!";
-  //   title.style.color = colors[3];
-  // },
   handleContextMenu: function() {
-    title.innerHTML = "That was a right click!";
-    title.style.color = colors[4];
+    target.innerHTML = "That was a right click!";
+    target.style.color = colors[4];
   }
 };
 
-title.addEventListener("mouseenter", superEventHandler.handleMouseEnter);
-title.addEventListener("mouseleave", superEventHandler.handleMouseLeave);
+target.addEventListener("mouseenter", superEventHandler.handleMouseEnter);
+target.addEventListener("mouseleave", superEventHandler.handleMouseLeave);
 // window는 현재 스크립트가 작동 중인 창을 나타내는 객체
 window.addEventListener("resize", superEventHandler.handleResize);
 window.addEventListener("contextmenu", superEventHandler.handleContextMenu);

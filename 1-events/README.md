@@ -16,8 +16,6 @@ https://developer.mozilla.org/en-US/docs/Web/API/Window
   https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event
 - mouseleave: 마우스가 떠났을 때 발생하는 이벤트  
   https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseleave_event
-- select: 어떤 텍스트가 선택되었을 때 발생하는 이벤트  
-  https://developer.mozilla.org/en-US/docs/Web/API/Element/select_event
 - contextmenu: 사용자가 요소를 마우스 우 클릭해 메뉴를 열 때 발생하는 이벤트  
   https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event
 - resize: 브라우저 창의 사이즈가 변할 때 발생하는 이벤트  
