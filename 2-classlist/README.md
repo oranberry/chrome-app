@@ -1,6 +1,5 @@
 ### Requirement
 
-- if... else
 - classList: 요소에 적용된 클래스들의 이름을 리스트 형태로 반환  
   https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
 - remove: classList의 메서드. classList를 통해 반환된 리스트 중에서 원하는 클래스 제거
