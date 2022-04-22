@@ -5,6 +5,6 @@ const chosenImage = images[Math.floor(Math.random() * images.length)];
 const bgImage = document.createElement("img");
 bgImage.src = `img/${chosenImage}`;
 // body에 추가
-document.body.appendChild(bgImage);ㄴ
+document.body.appendChild(bgImage);
 // append - 가장 뒤에 추가
 // prepend - 가장 앞에 추가
