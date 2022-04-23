@@ -1,23 +1,23 @@
-const body = document.body;
 // const body = document.querySelector("body");
+const body = document.body;
 
-const BIG_SCREEN = "bigScreen";
+const LARGE_SCREEN = "largeScreen";
 const MEDIUM_SCREEN = "mediumScreen";
 const SMALL_SCREEN = "smallScreen";
 
 function handleResize() {
   // innerWidth: 브라우저의 가로 길이를 나타내는 window 객체의 property
-  const width = window.innerWidth;
+  const screenWidth = window.innerWidth;
 
-  if (width > 1000) {
-    body.classList.add(BIG_SCREEN);
+  if (screenWidth > 1200) {
+    body.classList.add(LARGE_SCREEN);
     body.classList.remove(MEDIUM_SCREEN);
-  } else if (width <= 1000 && width >= 700) {
+  } else if (screenWidth <= 1200 && screenWidth >= 800) {
     body.classList.add(MEDIUM_SCREEN);
-    body.classList.remove(BIG_SCREEN, SMALL_SCREEN);
+    body.classList.remove(LARGE_SCREEN, SMALL_SCREEN);
   } else {
-    body.classList.remove(MEDIUM_SCREEN);
     body.classList.add(SMALL_SCREEN);
+    body.classList.remove(MEDIUM_SCREEN);
   }
 }
 
